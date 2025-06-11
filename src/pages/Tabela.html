@@ -5,8 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tabela de Classificação | Passa a Bola</title>
   <link rel="stylesheet" href="../css/Tabela.css" />
+  <link rel="stylesheet" href="../css/header.css">
 </head>
 <body>
+  <header>
+    <div class="logo-container">
+      <img src="../assets/imagens/logo.png" alt="Logo">
+      <h1 style="color: white;">Passa a Bola</h1>
+    </div>
+    <nav>
+      <a href="#">Jogos</a>
+      <a href="#">Times</a>
+      <a href="#">Competições</a>
+    </nav>
+    <div class="search-container" id="searchBox">
+      <img src="../assets/imagens/lupa.png" alt="Pesquisar" class="search-icon" onclick="toggleSearch()">
+      <input type="text" class="search-input" placeholder="Buscar...">
+    </div>
+    <div class="buttons">
+      <button style="background-color: #7c3aed; color: white;">Entrar</button>
+      <button style="background-color: #6d28d9; color: white;">Cadastre-se</button>
+    </div>
+  </header>
   <div class="jogos-ao-vivo-container">
 <h2 class="titulo-ao-vivo">
   Jogos Ao Vivo
@@ -133,5 +153,42 @@
       </tbody>
     </table>
   </div>
+    <footer>
+    <div>
+      <h4>ATALHOS</h4>
+      <a href="#">Todos os jogos</a>
+      <a href="#">Todos os times</a>
+      <a href="#">Todas as competições</a>
+    </div>
+    <div>
+      <h4>SOBRE NÓS</h4>
+      <a href="#">Empresa</a>
+      <a href="#">Contato</a>
+      <a href="#">Centro de ajuda</a>
+      <a href="#">História</a>
+    </div>
+    <div>
+      <h4>INFORMAÇÕES LEGAIS</h4>
+      <a href="#">Sobre nós</a>
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Termos e Condições</a>
+      <a href="#">Licença</a>
+      <a href="#">Configurações de Privacidade</a>
+    </div>
+    <div class="social-icons">
+      <img src="../assets/imagens/instagram.png" alt="Instagram">
+      <img src="../assets/imagens/facebook.png  " alt="Facebook">
+      <img src="../assets/imagens/twitter.png" alt="Twitter">
+      <img src="../assets/imagens/youtube.png" alt="YouTube">
+      <a href="">© 2025 Passa a Bola</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleSearch() {
+      const searchBox = document.getElementById('searchBox');
+      searchBox.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
