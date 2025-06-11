@@ -1,0 +1,61 @@
+   body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f4fb;
+      margin: 0;
+      padding: 0;
+    }
+
+    .tabela-container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    h2 {
+      background-color: #6a1b9a;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      font-size: 24px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead {
+      background-color: #9c27b0;
+      color: white;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      font-weight: bold;
+    }
+.escudo {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+td:nth-child(2) {
+  text-align: left;
+  padding-left: 16px; 
+}
+.linha-par {
+  background-color: #f3e5f5;
+}
+
+.linha-impar {
+  background-color: #ffffff;
+}
+
