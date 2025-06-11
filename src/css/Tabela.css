@@ -58,4 +58,72 @@ td:nth-child(2) {
 .linha-impar {
   background-color: #ffffff;
 }
+.jogos-ao-vivo-container {
+  max-width: 800px;
+  margin: 50px auto 100px auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.jogos-ao-vivo-container h2 {
+  background-color: #ab47bc; /* um tom próximo ao roxo para diferenciar */
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.jogos-ao-vivo-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.jogos-ao-vivo-container thead {
+  background-color: #ce93d8;
+  color: white;
+}
+
+.jogos-ao-vivo-container th,
+.jogos-ao-vivo-container td {
+  padding: 12px;
+  text-align: center;
+}
+
+.jogos-ao-vivo-container td:nth-child(1),
+.jogos-ao-vivo-container td:nth-child(2) {
+  text-align: left;
+  padding-left: 16px;
+}
+.titulo-ao-vivo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* espaço entre o texto e a bolinha */
+  background-color: #ab47bc;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.indicador-ao-vivo {
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+  animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 
