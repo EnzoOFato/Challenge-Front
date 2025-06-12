@@ -5,36 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Passa a Bola - Futebol Feminino</title>
   <link rel="stylesheet" href="../css/sobrenos.css">
+  <link rel="stylesheet" href="../css/header.css">
 </head>
 <body>
   <header>
-    <h1>Passa a Bola</h1>
-    <p>O jogo virou. E é pra elas.</p>
+    <div class="logo-container">
+      <img src="../assets/imagens/logo.png" alt="Logo">
+      <h1 style="color: white;">Passa a Bola</h1>
+    </div>
+    <nav>
+      <a href="#">Jogos</a>
+      <a href="#">Times</a>
+      <a href="#">Competições</a>
+    </nav>
+    <div class="search-container" id="searchBox">
+      <img src="../assets/imagens/lupa.png" alt="Pesquisar" class="search-icon" onclick="toggleSearch()">
+      <input type="text" class="search-input" placeholder="Buscar...">
+    </div>
+    <div class="buttons">
+      <button style="background-color: #7c3aed; color: white;">Entrar</button>
+      <button style="background-color: #6d28d9; color: white;">Cadastre-se</button>
+    </div>
   </header>
 
-  <main class="container">
+  <div class="container">
+    <div class="bloco-imagens">
     <img src="../assets/imagens/quemsomos.jpg" alt="Futebol Feminino" class="imagem">
     <img src="../assets/imagens/surgiuideia.jpg" alt="Futebol Feminino" class="imagem">
-
+    </div>
     <div class="texto">
       <h2 style="margin-bottom: 20px;">Quem somos</h2>
-      <p>
-        O Passa a Bola é uma iniciativa sem fins lucrativos criada por jovens que acreditam no poder transformador do futebol feminino. Nosso objetivo é valorizar, organizar e dar visibilidade a uma modalidade historicamente negligenciada no Brasil.
+        <p>O Passa a Bola é uma iniciativa sem fins lucrativos criada por jovens que acreditam no poder transformador do futebol feminino. Nosso objetivo é valorizar, organizar e dar visibilidade a uma modalidade historicamente negligenciada no Brasil.
         <br><br>
         A plataforma funciona como um portal centralizado para atletas, clubes, organizadores e fãs do futebol feminino. Aqui você encontra: campeonatos, peneiras, estatísticas, escolas de futebol e dados históricos confiáveis.
         <br><br>
-        Acreditamos que toda atleta merece ser vista, reconhecida e valorizada. Passa a Bola, o jogo virou. E é pra elas.
-      </p>
+        Acreditamos que toda atleta merece ser vista, reconhecida e valorizada. Passa a Bola, o jogo virou. E é pra elas.</p>
 
       <h2 style="margin-top: 30px; margin-bottom: 15px;">Como surgiu a ideia</h2>
-      <p>
-       A ideia do Passa a Bola surgiu ao observarmos uma realidade que ainda é pouco discutida: a falta de estrutura, organização e visibilidade para o futebol feminino no Brasil. Mesmo sendo o país do futebol, percebemos que o apoio às mulheres dentro do esporte é limitado, com poucas oportunidades, informações desencontradas e quase nenhum espaço para divulgação de talentos.
+       <p>Tudo começou com uma simples pesquisa. Procuramos peneiras, campeonatos e dados sobre o futebol feminino, e encontramos pouca coisa, muitas vezes desatualizada ou inacessível. Essa dificuldade nos fez refletir: e se existisse um lugar onde tudo isso estivesse centralizado, organizado e feito pensando nelas?
         <br><br>
-        Tudo começou com uma simples pesquisa. Procuramos peneiras, campeonatos e dados sobre o futebol feminino, e encontramos pouca coisa, muitas vezes desatualizada ou inacessível. Essa dificuldade nos fez refletir: e se existisse um lugar onde tudo isso estivesse centralizado, organizado e feito pensando nelas?
-        <br><br>
-        Foi dessa inquietação que nasceu o projeto. O Passa a Bola veio para ser uma plataforma de apoio real, um espaço onde jogadoras, treinadoras e apaixonadas pelo esporte pudessem encontrar o que precisam: informação, oportunidade e reconhecimento. É sobre dar voz, dar espaço e principalmente: dar o passe certo para um futuro melhor no futebol feminino.
-        </p>
+        Foi dessa inquietação que nasceu o projeto. O Passa a Bola veio para ser uma plataforma de apoio real, um espaço onde jogadoras, treinadoras e apaixonadas pelo esporte pudessem encontrar o que precisam: informação, oportunidade e reconhecimento. É sobre dar voz, dar espaço e principalmente: dar o passe certo para um futuro melhor no futebol feminino.</p>
     </div>
+  </div>
   </main>
+  <footer>
+    <div>
+      <h4>ATALHOS</h4>
+      <a href="#">Todos os jogos</a>
+      <a href="#">Todos os times</a>
+      <a href="#">Todas as competições</a>
+    </div>
+    <div>
+      <h4>SOBRE NÓS</h4>
+      <a href="#">Empresa</a>
+      <a href="#">Contato</a>
+      <a href="#">Centro de ajuda</a>
+      <a href="#">História</a>
+    </div>
+    <div>
+      <h4>INFORMAÇÕES LEGAIS</h4>
+      <a href="#">Sobre nós</a>
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Termos e Condições</a>
+      <a href="#">Licença</a>
+      <a href="#">Configurações de Privacidade</a>
+    </div>
+    <div class="social-icons">
+      <img src="../assets/imagens/instagram.png" alt="Instagram">
+      <img src="../assets/imagens/facebook.png  " alt="Facebook">
+      <img src="../assets/imagens/twitter.png" alt="Twitter">
+      <img src="../assets/imagens/youtube.png" alt="YouTube">
+      <a href="">© 2025 Passa a Bola</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleSearch() {
+      const searchBox = document.getElementById('searchBox');
+      searchBox.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
