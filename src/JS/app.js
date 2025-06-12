@@ -18,5 +18,5 @@ function antes(){
 
 function atualiza(){
     const largura = document.querySelector(".noticia").offsetWidth
-    wrapper.style.transform = `translate(-${atual * largura}px)`
+    wrapper.style.transform = `translate(-${(atual * largura)}px)`
 }
