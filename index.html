@@ -5,8 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Passa bola</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/header.css">
 </head>
 <body>
+    <header>
+        <div class="logo-container">
+          <img src="src/assets/imagens/logo.png" alt="Logo">
+          <h1 style="color: white;">Passa a Bola</h1>
+        </div>
+        <nav>
+          <a href="#">Jogos</a>
+          <a href="#">Times</a>
+          <a href="#">Competições</a>
+        </nav>
+        <div class="search-container" id="searchBox">
+          <img src="src/assets/imagens/lupa.png" alt="Pesquisar" class="search-icon" onclick="toggleSearch()">
+          <input type="text" class="search-input" placeholder="Buscar...">
+        </div>
+        <div class="buttons">
+          <button style="background-color: #7c3aed; color: white;">Entrar</button>
+          <button style="background-color: #6d28d9; color: white;">Cadastre-se</button>
+        </div>
+      </header>
+
     <section id="carrossel">
         <div class="listra"></div>
         <div class="content">
@@ -25,7 +46,7 @@
                             </div>
                         </div>
                         <div class="noticia">
-                            <img src="src/assets/imagens/Copa.png" alt="Copa passa a bola">
+                            <img src="src/assets/imagens/jogadaras/marta.png" alt="Copa passa a bola">
                             <div class="texto">
                                 <h1>Marta se despede da Seleção em amistoso</h1>
                                 <p>Marta se despede da Seleção em amistoso contra a Itália no Maracanã
@@ -33,7 +54,7 @@
                             </div>
                         </div>
                         <div class="noticia">
-                            <img src="src/assets/imagens/Copa.png" alt="Copa passa a bola">
+                            <img src="src/assets/imagens/jogadaras/cori.png" alt="Copa passa a bola">
                             <div class="texto">
                                 <h1>Corinthians vence Chelsea</h1>
                                 <p>Corinthians vence Chelsea e conquista a primeira Copa Intercontinental Feminina
@@ -48,9 +69,64 @@
         </div>
         <div class="listra"></div>
     </section>
-    <section>
-
+    <section class="peneiras">
+        <div class="card">
+            <img src="src/assets/imagens/peneiras/peneira1.png" alt="">
+            <p>Peneira região metropolitana de São Paulo</p>
+            <a href="#">Peneira SP</a>
+        </div>
+        <div class="card">
+            <img src="src/assets/imagens/peneiras/peneira2.png" alt="">
+            <p>Peneira região metropolitana do Rio de Janeiro</p>
+            <a href="#">Peneira RJ</a>
+        </div>
+        <div class="card">
+            <img src="src/assets/imagens/peneiras/peneira3.png" alt="">
+            <p>Peneira Uberlândia e Região</p>
+            <a href="#">Peneira MG</a>
+        </div>
+        <div class="card">
+            <img src="src/assets/imagens/peneiras/peneira4.png" alt="">
+            <p>Peneira Porto Seguro e Região</p>
+            <a href="#">Peneira BA</a>
+        </div>
     </section>
+    <footer>
+        <div>
+          <h4>ATALHOS</h4>
+          <a href="#">Todos os jogos</a>
+          <a href="#">Todos os times</a>
+          <a href="#">Todas as competições</a>
+        </div>
+        <div>
+          <h4>SOBRE NÓS</h4>
+          <a href="#">Empresa</a>
+          <a href="#">Contato</a>
+          <a href="#">Centro de ajuda</a>
+          <a href="#">História</a>
+        </div>
+        <div>
+          <h4>INFORMAÇÕES LEGAIS</h4>
+          <a href="#">Sobre nós</a>
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos e Condições</a>
+          <a href="#">Licença</a>
+          <a href="#">Configurações de Privacidade</a>
+        </div>
+        <div class="social-icons">
+          <img src="src/assets/imagens/instagram.png" alt="Instagram">
+          <img src="src/assets/imagens/facebook.png" alt="Facebook">
+          <img src="src/assets/imagens/twitter.png" alt="Twitter">
+          <img src="src/assets/imagens/youtube.png" alt="YouTube">
+          <a href="">© 2025 Passa a Bola</a>
+        </div>
+      </footer>
+    <script>
+        function toggleSearch() {
+          const searchBox = document.getElementById('searchBox');
+          searchBox.classList.toggle('active');
+        }
+    </script>
     <script src="src/JS/app.js"></script>
 </body>
 </html>
